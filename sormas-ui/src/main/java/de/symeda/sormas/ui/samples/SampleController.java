@@ -62,6 +62,7 @@ import de.symeda.sormas.api.user.UserRight;
 import de.symeda.sormas.ui.ControllerProvider;
 import de.symeda.sormas.ui.SormasUI;
 import de.symeda.sormas.ui.UserProvider;
+import de.symeda.sormas.ui.labmessage.LabMessagesView;
 import de.symeda.sormas.ui.utils.ButtonHelper;
 import de.symeda.sormas.ui.utils.CommitDiscardWrapperComponent;
 import de.symeda.sormas.ui.utils.CommitDiscardWrapperComponent.DiscardListener;
@@ -77,6 +78,7 @@ public class SampleController {
 	public void registerViews(Navigator navigator) {
 		navigator.addView(SamplesView.VIEW_NAME, SamplesView.class);
 		navigator.addView(SampleDataView.VIEW_NAME, SampleDataView.class);
+		navigator.addView(LabMessagesView.VIEW_NAME, LabMessagesView.class);
 	}
 
 	public void navigateToData(String sampleUuid) {
